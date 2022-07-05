@@ -1,0 +1,19 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Goals{% endblock title %}
+
+{% block body %}
+<h1>Goal / Achievements</h1>
+<div>My goal is to launch a robotics business. Recreational humanoids and robots will be the primary topic of focus. 
+Basically, I want to make the lives of regular people simpler by integrating smart technology into their lives.  
+My role models are the new-age tech entrepreneurs like, Elon Musk and Steve Jobs. <br> <br>
+<mark class="red">Achievements: </mark> 
+<ul>
+    {% for post in object_list %}
+        <li><h2>{{ post.title }} </h2>- {{post.pub_date.date}}<br>
+            {{post.content}}
+        </li>
+    {%endfor%}
+</ul>
+</div>
+{% endblock body %}

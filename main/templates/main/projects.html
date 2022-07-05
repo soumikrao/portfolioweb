@@ -1,0 +1,16 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Projects{% endblock title %}
+
+{% block body %}
+<h1>My Projects</h1>
+<div>
+<ul>
+    {% for post in object_list %}
+        <li><h2>{{ post.title }} </h2>- {{post.pub_date.date}}<br>
+            {{post.content}}
+        </li>
+    {%endfor%}
+</ul>
+</div>
+{% endblock body %}

@@ -1,0 +1,45 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock title %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+</head>
+<body>
+
+    <a href="/" class="logo">
+		<img src="{% static 'images/computer.png' %}" alt="">
+	</a>
+
+  	<input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
+  	<label for="menu-icon"></label>
+  	<nav class="nav"> 		
+  		<ul class="pt-5">
+  			<li><a href="/about">About Me</a></li>
+  			<li><a href="/skills">My Skills</a></li>
+  			<li><a href="/projects">Projects</a></li>
+  			<li><a href="/goalachieve">Goals</a></li>
+  		</ul>
+  	</nav>
+
+    {% block body %}
+    
+    {% endblock body %}
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<nav class="social">
+  
+ 
+          <ul>
+              <li><a href="https://www.instagram.com/soumik.rao/">Instagram <i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://github.com/soumikrao">Github <i class="fa fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/teonamushambadze">Linkedin <i class="fa fa-linkedin"></i></a></li>
+            <li><a href="mailto:soumikraodusa@gmail.com">Gmail <i class="fa fa-envelope"></i></a></li>
+            <li><a href="tel:7995653336"> Telephone<i class="fa fa-phone"></i></a></li>
+              </ul>
+      </nav>
+</body>
+</html>

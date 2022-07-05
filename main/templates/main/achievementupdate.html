@@ -1,0 +1,12 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Achievement Update{% endblock title %}
+
+{% block body %}
+<h1>Achievements Update</h1>
+<form method="POST">
+    {% csrf_token %} 
+    {{ form.as_p }}
+    <button>Post</button>
+</form>
+{% endblock body %}

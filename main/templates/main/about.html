@@ -1,0 +1,33 @@
+{% extends 'main/base.html' %}
+
+{% block title %}About Me{% endblock title %}
+
+{% block body %}
+{% load static %}
+
+<h1>About Me</h1><br>
+<div>
+    <article><img src="{% static 'images/photo.jpg' %}" alt="" style="height: 200px; width: auto; border: 2px solid #ddd;
+        border-radius: 4px; "></article><br>
+<mark class="blue"> Soumik Rao</mark> here, Welcome! At Mahindra University in Hyderabad, India, I am now pursuing a degree in <mark class="red">Electrical 
+and Electronics Engineering. </mark><br><br>
+The sophisticated world of technology has always captivated me. Everything in this universe, in my opinion, can 
+be understood, investigated, and resolved through <mark class="orange">science</mark> and <mark class="green">technology</mark>. I'm extroverted, committed, and 
+enthusiastic, which makes me an excellent fit for any assignment.
+<br><br> My mantra is <mark class = "violet">"efficient and timely outcomes,"</mark> and I can claim that I am a patient team player and a <mark class="yellow">natural leader</mark>, giving me the flexibility to work in or 
+lead a team in any situation. <br><br>
+I have a strong sense of <mark class="dblue">ambition and goal-orientation</mark>, which drives me to push my boundaries and discover new 
+things. <br><br>
+In addition to applied technology, <mark class ="red">physics</mark> is another area of interest for me. I've always been interested in 
+<mark class = "blue">quantum physics</mark> and the <mark class = "pink">intricacies of space-time</mark>. I read everything that happens in the realm of physics with 
+great interest. <br> <br>
+<mark class="green">Robotics</mark> is my major area of interest. The future may have human-like companions equipped with A.I. and other 
+technology. So, my ambition is to create a business that would commercialise <mark class = "violet">humanoids</mark> and install them in 
+every home. <br> <br>
+<mark class="yellow">Dear Reader</mark>, we are what we make, thus I take inspiration from what my idol said:<br>
+<article>
+    <h3>"Let's go invent tomorrow instead of worrying about what happened yesterday." </h3>
+    - Steve Jobs
+</article>
+</div>
+{% endblock body %}

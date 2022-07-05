@@ -1,0 +1,367 @@
+@import 'https://fonts.googleapis.com/css?family=Playfair+Display:400,700i,900i';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  color: #000000;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #656562;
+  font-size: 14px;
+  overflow: hidden;
+}
+.wrap {
+  perspective-origin: 50% 50%;
+}
+.page {
+  margin: 3%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 1.4vw;
+}
+.svg {
+  stroke: #de2525;
+  position: absolute;
+  bottom: -100vh;
+  transform-style: preserve-3d;
+}
+.svg:nth-child(1) {
+  left: 11%;
+  animation: raise1 18s linear infinite;
+  animation-delay: -1s;
+  transform: scale(-0.3) rotate(119deg);
+  z-index: -6;
+  filter: blur(-5px);
+}
+@keyframes raise1 {
+  to {
+    bottom: 150vh;
+    transform: scale(-0.3) rotate(184deg);
+  }
+}
+.svg:nth-child(2) {
+  left: 72%;
+  animation: raise2 12s linear infinite;
+  animation-delay: -2s;
+  transform: scale(0) rotate(136deg);
+  z-index: -5;
+  filter: blur(-4px);
+}
+@keyframes raise2 {
+  to {
+    bottom: 150vh;
+    transform: scale(0) rotate(160deg);
+  }
+}
+.svg:nth-child(3) {
+  left: 50%;
+  animation: raise3 16s linear infinite;
+  animation-delay: -1s;
+  transform: scale(0.3) rotate(246deg);
+  z-index: -4;
+  filter: blur(-3px);
+}
+@keyframes raise3 {
+  to {
+    bottom: 150vh;
+    transform: scale(0.3) rotate(57deg);
+  }
+}
+.svg:nth-child(4) {
+  left: -15%;
+  animation: raise4 20s linear infinite;
+  animation-delay: -1s;
+  transform: scale(0.6) rotate(78deg);
+  z-index: -3;
+  filter: blur(-2px);
+}
+@keyframes raise4 {
+  to {
+    bottom: 150vh;
+    transform: scale(0.6) rotate(290deg);
+  }
+}
+.svg:nth-child(5) {
+  left: 22%;
+  animation: raise5 12s linear infinite;
+  animation-delay: -2s;
+  transform: scale(0.9) rotate(31deg);
+  z-index: -2;
+  filter: blur(-1px);
+}
+@keyframes raise5 {
+  to {
+    bottom: 150vh;
+    transform: scale(0.9) rotate(111deg);
+  }
+}
+.svg:nth-child(6) {
+  left: 75%;
+  animation: raise6 12s linear infinite;
+  animation-delay: 0s;
+  transform: scale(1.2) rotate(311deg);
+  z-index: -1;
+  filter: blur(0px);
+}
+@keyframes raise6 {
+  to {
+    bottom: 150vh;
+    transform: scale(1.2) rotate(43deg);
+  }
+}
+.svg:nth-child(7) {
+  left: 66%;
+  animation: raise7 19s linear infinite;
+  animation-delay: 0s;
+  transform: scale(1.5) rotate(103deg);
+  z-index: 0;
+  filter: blur(1px);
+}
+@keyframes raise7 {
+  to {
+    bottom: 150vh;
+    transform: scale(1.5) rotate(324deg);
+  }
+}
+.svg:nth-child(8) {
+  left: 31%;
+  animation: raise8 7s linear infinite;
+  animation-delay: 0s;
+  transform: scale(1.8) rotate(104deg);
+  z-index: 1;
+  filter: blur(2px);
+}
+@keyframes raise8 {
+  to {
+    bottom: 150vh;
+    transform: scale(1.8) rotate(176deg);
+  }
+}
+.svg:nth-child(9) {
+  left: 96%;
+  animation: raise9 16s linear infinite;
+  animation-delay: 0s;
+  transform: scale(2.1) rotate(310deg);
+  z-index: 2;
+  filter: blur(3px);
+}
+@keyframes raise9 {
+  to {
+    bottom: 150vh;
+    transform: scale(2.1) rotate(294deg);
+  }
+}
+.svg:nth-child(10) {
+  left: 89%;
+  animation: raise10 13s linear infinite;
+  animation-delay: -2s;
+  transform: scale(2.4) rotate(64deg);
+  z-index: 3;
+  filter: blur(4px);
+}
+@keyframes raise10 {
+  to {
+    bottom: 150vh;
+    transform: scale(2.4) rotate(217deg);
+  }
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vh;
+  }
+
+
+
+
+  @-webkit-keyframes typing { from { width: 0; } }
+  @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+  
+  h1.first { 
+    margin-top: 100px;
+    text-align: center;
+    color: rgb(34, 40, 45);
+    font: bold 300% Consolas, Monaco, monospace;
+    font-size: 3vh;
+    border-right: .1em solid black;
+    width: 16.5em; 
+    width: 15ch;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: type 1s steps(10,end) forwards;
+}
+h1.second{ 
+    font-family: 'Bebas Neue', cursive;
+    border-right: .1em solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12vh;
+    width: 16.5em; 
+    width: 6.5ch;
+    background: -webkit-linear-gradient(#11cea3, #bdfcd2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: typing 1.5s steps(10, end),
+                 blink-caret .5s step-end infinite alternate;
+}
+
+@keyframes type {
+    0% {
+      width: 0;
+    }
+    1%, 99%{
+      border-right: 1px solid rgb(10, 10, 10);
+    }
+    100%{
+      border-right: none;
+    }
+  }
+
+
+  
+  .wrapper1{
+    position: absolute;
+    top:65%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+button{
+    width:20vh;
+    height: 5vh;
+    background: linear-gradient(to left top, #e93f3f 50%, #743333 50%);
+    border-style: none;
+    color:#fff;
+    font-size: 2vh;
+    letter-spacing: 3px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+    transition: all .5s;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+}
+button span{
+    position: absolute;
+    display: block;
+}
+button span:nth-child(1){
+    height: 3px;
+    width:200px;
+    top:0px;
+    left:-200px;
+    background: linear-gradient(to right, rgba(0,0,0,0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span1 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes span1{
+    0%{
+        left:-200px
+    }
+    100%{
+        left:200px;
+    }
+}
+button span:nth-child(2){
+    height: 70px;
+    width: 3px;
+    top:-70px;
+    right:0px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #f6e58d);
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span2 2s linear infinite;
+    animation-delay: 2s;
+}
+@keyframes span2{
+    0%{
+        top:-70px;
+    }
+    100%{
+        top:70px;
+    }
+}
+button span:nth-child(3){
+    height:3px;
+    width:200px;
+    right:-200px;
+    bottom: 0px;
+    background: linear-gradient(to left, rgba(0,0,0,0), #f6e58d);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    animation: span3 2s linear infinite;
+    animation-delay: 3s;
+}
+@keyframes span3{
+    0%{
+        right:-200px;
+    }
+    100%{
+        right: 200px;
+    }
+}
+
+button span:nth-child(4){
+    height:70px;
+    width:3px;
+    bottom:-70px;
+    left:0px;
+    background: linear-gradient(to top, rgba(0,0,0,0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    animation: span4 2s linear infinite;
+    animation-delay: 4s;
+}
+@keyframes span4{
+    0%{
+        bottom: -70px;
+    }
+    100%{
+        bottom:70px;
+    }
+}
+
+button:hover{
+    transition: all .5s;
+    transform: rotate(-3deg) scale(1.1);
+    box-shadow: 0px 3px 5px rgba(0,0,0,.4);
+}
+button:hover span{
+    animation-play-state: paused;
+}
+.container1 {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .centered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
