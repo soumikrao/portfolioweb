@@ -302,6 +302,7 @@ div{
     padding-right: 10vw;
     width: 80vw;
     height: 60vh;
+    overflow: scroll;
 
 }
 
